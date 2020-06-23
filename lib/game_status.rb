@@ -26,3 +26,8 @@ end
 def full?(board)
   board.all?{|toke|token=="X" || token=="O"}
 end
+
+def draw?(board)
+  full?(board) && !won?(board)
+  
+end
